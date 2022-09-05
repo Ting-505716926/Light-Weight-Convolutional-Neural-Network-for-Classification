@@ -2,7 +2,7 @@ from Layer.CSP_MB_Layers import *
 from tensorflow import math
 from tensorflow.keras.optimizers import Adam, SGD, RMSprop
 from tensorflow_addons.optimizers import CyclicalLearningRate
-from tensorflow.keras.layers import Conv2D, BatchNormalization, GlobalMaxPooling2D, Flatten, AvgPool2D, Dropout, Resizing
+from tensorflow.keras.layers import Conv2D, BatchNormalization, Dropout, ReLU, GlobalAveragePooling2D, Dense
 from tensorflow.keras.regularizers import L2
 from tensorflow.keras import Input
 
