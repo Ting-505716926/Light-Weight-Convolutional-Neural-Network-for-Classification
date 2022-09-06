@@ -17,4 +17,41 @@ This lightweight network is mainly based on Cross Stage Partial Network (CSPNet)
  | Brid 100 <br> ("Brid 325"前100種類) | https://www.kaggle.com/datasets/gpiosenka/100-bird-species |
   
 # Grad-Cam
-!["Grad-Cam"](img/3.png "Grad-Cam")
+![image](img/3.png)
+
+# Experimental results
+
+模型所使用的的Attention為SE。
+
+The Attention used by the model is SE.
+### Cifar 10
+ | Model            | Accuracy | parameters |
+ | :---:            | :------: | :--------: |
+ | Mobilenetv3Large | 0.8929   | 3,936,296 |
+ | Mobilenetv3Small | 0.8727   | 1,556,568 |
+ | OurLarge         | 0.8813   | 2,233,069 |
+ | OurSmall         | 0.8546   |  923,137  |
+
+### Cifar 100
+ | Model            | Accuracy | parameters |
+ | :---:            | :------: | :--------: |
+ | Mobilenetv3Large | 0.6171   | 4,051,586 |
+ | Mobilenetv3Small | 0.5893   | 1,648,818 |
+ | OurLarge         | 0.6078   | 2,348,359 |
+ | OurSmall         | 0.5737   | 1,015,387 |
+ 
+### Bird-100
+ | Model            | Accuracy | parameters |
+ | :---:            | :------: | :--------: |
+ | Mobilenetv3Large | 0.9620   | 4,051,586 |
+ | Mobilenetv3Small | 0.9520   | 1,648,818 |
+ | OurLarge         | 0.9380   | 2,348,359 |
+ | OurSmall         | 0.9440   | 1,015,387 |
+ 
+### Bird-325
+ | Model            | Accuracy | parameters |
+ | :---:            | :------: | :--------: |
+ | Mobilenetv3Large | 0.9575   | 4,339,811 |
+ | Mobilenetv3Small | 0.9489   | 1,879,443 |
+ | OurLarge         | 0.9526   | 2,636,728 |
+ | OurSmall         | 0.9563   | 1,246,156 |
