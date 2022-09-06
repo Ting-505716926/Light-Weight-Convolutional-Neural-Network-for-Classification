@@ -2,7 +2,7 @@ from Layer.CSP_MB_Layers import *
 from tensorflow import math
 from tensorflow.keras.optimizers import Adam, SGD, RMSprop
 from tensorflow_addons.optimizers import CyclicalLearningRate
-from tensorflow.keras.layers import Conv2D, BatchNormalization, Dropout, ReLU, GlobalAveragePooling2D, Dense
+from tensorflow.keras.layers import Conv2D, BatchNormalization, Dropout, ReLU, GlobalAveragePooling2D, Dense, Flatten
 from tensorflow.keras.regularizers import L2
 from tensorflow.keras import Input
 
@@ -55,7 +55,8 @@ def build_base_model(input_shape=None, SE_CBAM_CA="SE", Specification=None, init
 
 def predictions_head(base_model,num_classes,Dropout_rate=0.3):
         x = base_model.output
-        x = GlobalAveragePooling2D()(x)
+        # x = GlobalAveragePooling2D()(x)
+        x = Flatten()(x)
         x = Dropout(rate=Dropout_rate)(x)
         
         #類別數
