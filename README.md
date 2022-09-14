@@ -25,20 +25,20 @@ This lightweight network is mainly based on Cross Stage Partial Network (CSPNet)
 
 The Attention used by the model is SE.
 ### Cifar 10
- | Model            | Accuracy | parameters |
- | :---:            | :------: | :--------: |
- | Mobilenetv3Large | 0.8929   | 3,936,296 |
- | Mobilenetv3Small | 0.8727   | 1,556,568 |
- | OurLarge         | 0.8813   | 2,233,069 |
- | OurSmall         | 0.8546   |  923,137  |
+ | Model            | Accuracy | parameters | Phone ms <br>(Qualcomm 865) |
+ | :---:            | :------: | :--------: | :-------------------------: |
+ | Mobilenetv3Large | 0.8929   |  3,936,296 | 8.3 |
+ | Mobilenetv3Small | 0.8727   |  1,556,568 | 6.5 |
+ | OurLarge         | 0.8813   |  2,233,069 | 7.8 |
+ | OurSmall         | 0.8546   |   923,137  | 5.7 |
 
 ### Cifar 100
- | Model            | Accuracy | parameters |
- | :---:            | :------: | :--------: |
- | Mobilenetv3Large | 0.6171   | 4,051,586 |
- | Mobilenetv3Small | 0.5893   | 1,648,818 |
- | OurLarge         | 0.6078   | 2,348,359 |
- | OurSmall         | 0.5737   | 1,015,387 |
+ | Model            | Accuracy | parameters | Phone ms <br>(Qualcomm 865) |
+ | :---:            | :------: | :--------: | :-------------------------: |
+ | Mobilenetv3Large | 0.6171   | 4,051,586 | 9.5 |
+ | Mobilenetv3Small | 0.5893   | 1,648,818 | 7.1 |
+ | OurLarge         | 0.6078   | 2,348,359 | 8.0 |
+ | OurSmall         | 0.5737   | 1,015,387 | 6.9 |
  
 ### Bird-100
  | Model            | Accuracy | parameters |
